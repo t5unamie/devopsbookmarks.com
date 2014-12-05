@@ -13,7 +13,6 @@ if (cluster.isMaster) {
   app.set('views', __dirname + '/views');
   app.set('view engine', 'ejs');
 
-  app.use(require('connect-redirecthost').redirectHost('localhost'));
   app.use(require('morgan')('short'));
   app.use(require('compression')());
   app.use(require('errorhandler')());
